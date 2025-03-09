@@ -1,0 +1,33 @@
+$ python task1.py task1.py 
+     1  import click
+     2  import sys
+     3
+     4  @click.command
+     5  @click.argument('file', type=click.File('r'), default=sys.stdin)
+     6  def nl(file):
+     7      for number, line in enumerate(file):
+     8          print(f'{number+1:>6}\t{line}', end='')
+     9
+    10
+    11  if __name__ == '__main__':
+    12      nl()
+$ python task1.py ../pyproject.toml 
+     1  [project]
+     2  name = "python"
+     3  version = "0.1.0"
+     4  description = "Add your description here"
+     5  readme = "README.md"
+     6  requires-python = ">=3.13"
+     7  dependencies = [
+     8      "click>=8.1.8",
+     9      "ruff>=0.9.10",
+    10  ]
+$ python task1.py 
+hello
+     1  hello
+world
+     2  world
+!
+     3  !
+
+     4

@@ -1,0 +1,71 @@
+$ python task2.py task1.py task2.py 
+==> task1.py <==
+
+@click.command
+@click.argument('file', type=click.File('r'), default=sys.stdin)
+def nl(file):
+    for number, line in enumerate(file):
+        print(f'{number+1:>6}\t{line}', end='')
+
+
+if __name__ == '__main__':
+    nl()
+
+==> task2.py <==
+    else:
+        for i, file in enumerate(files):
+            if i > 0:
+                print()
+            print(f'==> {file.name} <==')
+            tail_impl(file, 10)
+
+
+if __name__ == '__main__':
+    tail()
+$ python task2.py task2.py
+    else:
+        for i, file in enumerate(files):
+            if i > 0:
+                print()
+            print(f'==> {file.name} <==')
+            tail_impl(file, 10)
+
+
+if __name__ == '__main__':
+    tail()
+$ python task2.py
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18

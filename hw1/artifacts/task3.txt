@@ -1,0 +1,12 @@
+$ python task3.py task3.py 
+36      84      867     task3.py
+$ python task3.py task1.py task2.py task3.py 
+12      22      246     task1.py
+27      54      564     task2.py
+36      84      867     task3.py
+75      160     1677    total
+$ python task3.py 
+hello world
+hello
+!
+3       4       20
