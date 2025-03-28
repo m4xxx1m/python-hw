@@ -1,0 +1,4 @@
+hash of matrices A and C: 21
+hash of matrices B and D: 40
+hash of matrix A @ B: 1248
+hash of matrix C @ D: 1740
