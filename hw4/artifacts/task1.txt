@@ -1,0 +1,4 @@
+n = 50000; times = 10
+run_sequential: 3.3662524223327637s
+run_threads: 3.631340742111206s
+run_processes: 0.6633377075195312s
